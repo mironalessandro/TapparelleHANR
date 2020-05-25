@@ -31,3 +31,8 @@ Inserire le entità input_select.tapparelle_chiusura_automatica e input_datetime
 
 
 ## Ricordarsi di creare una routine su Alexa tramite la app Quando senti: “Alexa Blocca azione” porta la input_boolean.alexa_blocca_azione a ON
+## Per i meno esperti di GitHub
+Andare su find file:
+
+Scaricare il file o copiarsi il codice dentro la cartella package
+Creare un nuovo flow su NodeRed. Entrare nel file flow.json su github. Copiare tutto il codice e fare import dentro il flow appena creato.
