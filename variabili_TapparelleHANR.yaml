@@ -1,0 +1,34 @@
+automation:
+  - id: '1542905692237'
+    alias: 'Orario Manuale Su Tapparelle '
+    description: Imposta Variabile temp con on all'orario prestabilito
+    trigger:
+    - platform: template
+      value_template: '{{states.sensor.time.state == states.input_datetime.chiusura_manuale_tapparelle.state[0:5]}}'
+    condition: []
+    action:
+    - data: {}
+      entity_id: input_boolean.tapparelle_manuale_temp
+      service: input_boolean.turn_on
+ 
+input_boolean:
+  tapparelle_manuale_temp:
+    name: Variabile Temp per Tapparelle
+  alexa_blocca_azione:
+    name: Alexa Blocca Azione
+input_select:
+  tapparelle_chiusura_automatica:
+    name: Tapparelle Chiusura Automatica
+    options:
+      - Al tramonto
+      - Scelta Orario
+      - Disabilitato
+    initial: Al tramonto
+    icon: mdi:window-shutter
+
+input_datetime:
+  chiusura_manuale_tapparelle:
+    name: Scelta dell'orario in caso di "Scelta Orario"
+    has_date: false
+    has_time: true
+input_datetime.chiusura_manuale_tapparelle
