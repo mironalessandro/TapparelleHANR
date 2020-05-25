@@ -31,4 +31,4 @@ input_datetime:
     name: Scelta dell'orario in caso di "Scelta Orario"
     has_date: false
     has_time: true
-input_datetime.chiusura_manuale_tapparelle
+
