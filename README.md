@@ -36,3 +36,6 @@ Andare su find file:
 
 Scaricare il file o copiarsi il codice dentro la cartella package
 Creare un nuovo flow su NodeRed. Entrare nel file flow.json su github. Copiare tutto il codice e fare import dentro il flow appena creato.
+
+### New feature
+Chiusura automatica delle tapparelle aperte ad un orario da stabile nel timestamp. Attenzione si chiudono solo le tapparelle che sono aperte più del 20% in quanto potrebbe essere che qualcuno le tenga aperte durante la notte per far passare l'aria.
