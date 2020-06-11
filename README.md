@@ -1,3 +1,7 @@
+### Spiegazione Video sul canale Node Red Italia
+
+https://www.youtube.com/watch?v=cNk22oKGPao&t=52s
+
 
 ### About
 
